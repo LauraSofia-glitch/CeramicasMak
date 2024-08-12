@@ -27,15 +27,12 @@
         top: 50%; /* Centra verticalmente la imagen dentro del header */
         transform: translateY(-50%); /* Ajuste para centrar correctamente la imagen */
         }
-        .text-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        }
         header {
             background-color: #1759FF;
             color: white;
-            text-align: center;
+            display: flex; /* Utiliza Flexbox para organizar los elementos */
+            justify-content: center; /* Centra horizontalmente los elementos (logo y texto) */
+            align-items: center; /* Centra verticalmente el logo y el texto */
             font-size: 1.5em;
             padding: 10px; /* Espacio interno del encabezado */
             position: relative;
