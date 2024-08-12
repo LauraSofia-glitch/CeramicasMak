@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cerámicas Mak - Promoviendo el arte en el valle desde 1988</title>
+    <!-- Incluye la biblioteca de Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* Reseteo de estilos básicos */
         * {
@@ -126,13 +128,38 @@
             font-size: 0.9em;
             margin-top: 20px;
         }
+        /* Estilos para el contenedor de redes sociales */
+        .social-media {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        /* Estilos para los íconos de redes sociales */
+        .social-icon {
+            color: #fff;
+            font-size: 24px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .social-icon:hover {
+            color: #1da1f2; /* Cambia el color cuando el usuario pasa el ratón sobre el ícono */
+        }
+        /* Estilos para los íconos de redes sociales con imágenes personalizadas */
+        .social-media img {
+            width: 40px; /* Tamaño de los íconos */
+            height: auto;
+            margin: 0 10px; /* Espacio entre los íconos */
+            transition: transform 0.3s ease;
+        }
+        .social-media img:hover {
+            transform: scale(1.1); /* Agranda el ícono ligeramente al pasar el cursor */
+        }
         /* Estilos para dispositivos móviles */
         @media (max-width: 768px) {
             nav a {
                 display: block;
                 padding: 10px;
             }
-
             .gallery img {
                 width: 100%;
                 margin: 10px 0;
@@ -226,6 +253,20 @@
 
     <footer>
         <p>&copy; 2024 Cerámicas Mak. Todos los derechos reservados.</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/tu-perfil" target="_blank" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.twitter.com/tu-perfil" target="_blank" class="social-icon">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/tu-perfil" target="_blank" class="social-icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
     </footer>
 
 </body>
