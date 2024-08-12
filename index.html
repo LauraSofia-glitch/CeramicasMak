@@ -22,8 +22,11 @@
         .logo {
         width: 100px; /* Ajusta el tamaño según sea necesario */
         height: auto; /* Mantiene la proporción de la imagen */
+        position: absolute; /* Posiciona la imagen de manera absoluta */
+        right: 10px; /* Coloca la imagen a la izquierda */
+        top: 50%; /* Centra verticalmente la imagen dentro del header */
+        transform: translateY(-50%); /* Ajuste para centrar correctamente la imagen */
         border-radius: auto; /* Redondea los bordes si lo deseas */
-        float: right; /* Coloca la imagen a la derecha */
         margin-right: 15px; /* Espacio entre la imagen y el texto */
         }
         .text-container {
@@ -34,16 +37,18 @@
         header {
             background-color: #1759FF;
             color: white;
-            text-align: left;
+            text-align: center;
             font-size: 1.5em;
             overflow: hidden; /* Limpia el flotado para evitar problemas de diseño */
             display: flex; /* Usa Flexbox para el contenedor */
             align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
             padding: 10px; /* Espacio interno del encabezado */
+            position: relative;
         }
         /* Estilos para el texto */
         h1 {
-            margin: 0; /* Elimina el margen por defecto para un mejor ajuste */
+        margin: 0; /* Elimina el margen por defecto para un mejor ajuste */
+        display: inline-block; /* Asegura que el texto esté centrado en su contenedor */
         }
         nav {
             background-color: #FF55C2;
