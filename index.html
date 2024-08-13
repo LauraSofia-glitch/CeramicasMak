@@ -80,6 +80,27 @@
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
+        /* Estilos para la galería de fotos */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
+        }
+
         .gallery h2, .services, .about h2, .testimonials h2, .contact h2 {
             color: #ffffff;
         }
