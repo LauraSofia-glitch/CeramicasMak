@@ -27,6 +27,41 @@
             text-align: center;
         }
 
+        /* Estilos para el contenedor de la galería */
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Estilos para cada columna */
+        .gallery-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+        }
+
+        /* Estilos para las imágenes */
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        /* Estilos para los textos */
+        .gallery-item p {
+            margin: 0;
+            font-size: 16px;
+            color: #333;
+        }
+
         /* Estilos para la galería del álbum */
         .photo-grid {
             display: grid;
@@ -72,20 +107,29 @@
         <h1>Álbum 1: Religioso</h1>
     </header>
 
-    <!-- Galería de fotos del álbum -->
-    <section class="photo-grid">
-        <h2>Angeles</h2>
-        <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/angel.jpeg?raw=true" alt="angel">
-        <h2>Cenas</h2>
-        <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/ultimacenamanos1.jpeg?raw=true" alt="ultimacenamanos">
-        <h2>Virgenes</h2>
-        <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/WhatsApp%20Image%202024-08-14%20at%202.54.19%20PM.jpeg?raw=true" alt="guadalupe">
-        <h2>Alas</h2>
-        <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/alasacostadas.jpeg?raw=true" alt="alasacostadas">
-        <h2>Otros</h2>
-        <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/WhatsApp%20Image%202024-08-14%20at%202.54.19%20PM%20(1).jpeg?raw=true" alt="mariayjose">
-        <!-- Añadir más imágenes según sea necesario -->
-    </section>
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/angel.jpeg?raw=true" alt="Angeles">
+            <p>Angeles</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/ultimacenamanos1.jpeg?raw=true" alt="ultimacenamanos">
+            <p>ultimacenamanos</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/WhatsApp%20Image%202024-08-14%20at%202.54.19%20PM.jpeg?raw=true" alt="guadalupe">
+            <p>Virgenes</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/alasacostadas.jpeg?raw=true" alt="alasacostadas">
+            <p>Alas</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/WhatsApp%20Image%202024-08-14%20at%202.54.19%20PM%20(1).jpeg?raw=true" alt="mariayjose">
+            <p>Otros</p>
+        </div>
+        <!-- Añadir más columnas según sea necesario -->
+    </div>
 
     <!-- Enlace de retorno a la página principal -->
     <a class="back-link" href="index.html">Volver a la página principal</a>
