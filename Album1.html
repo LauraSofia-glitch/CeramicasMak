@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álbum 1: Religioso</title>
+  
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos para el encabezado del álbum */
+        header {
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+
+        /* Estilos para la galería del álbum */
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .photo-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .photo-grid img:hover {
+            transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
+        }
+
+        /* Enlace de retorno */
+        .back-link {
+            display: block;
+            text-align: center;
+            margin: 20px;
+            font-size: 18px;
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Álbum 1: Productos Nuevos</h1>
+    </header>
+
+    <!-- Galería de fotos del álbum -->
+    <section class="photo-grid">
+        <img src="C:\Users\juanc\Downloads\producto1.jpg" alt="Producto 1">
+        <img src="C:\Users\juanc\Downloads\producto2.jpg" alt="Producto 2">
+        <img src="C:\Users\juanc\Downloads\producto3.jpg" alt="Producto 3">
+        <!-- Añadir más imágenes según sea necesario -->
+    </section>
+
+    <!-- Enlace de retorno a la página principal -->
+    <a class="back-link" href="index.html">Volver a la página principal</a>
+
+</body>
+</html>
