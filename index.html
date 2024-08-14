@@ -19,7 +19,7 @@
             padding: 0;
             background-color: #1759FF;
             color: #ffffff;
-            line-height: 1.6;
+            line-height: 2.0;
         }
         .logo {
         grid-column: 3; /* Coloca el logo en la columna de la derecha */
@@ -74,6 +74,26 @@
             color: #ffffff;
         }
 
+        /* Estilos para el contenedor de la galería */
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); /* 5 columnas */
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Estilos para cada elemento de la galería */
+        .gallery-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+        }
+
         /* Estilos para la galería de fotos */
         .gallery {
             display: grid;
@@ -83,14 +103,22 @@
         }
 
         .gallery img {
-            width: 100%;
+            max width: 100%;
             height: auto;
-            border-radius: 10px;
+            border-radius: 8px;
+            margin-bottom: 10px;
             transition: transform 0.3s ease;
         }
 
         .gallery img:hover {
             transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
+        }
+
+        /* Estilos para los textos */
+        .gallery-item p {
+            margin: 0;
+            font-size: 20px;
+            color: #fff;
         }
 
         .gallery h2, .services, .about h2, .testimonials h2, .contact h2 {
