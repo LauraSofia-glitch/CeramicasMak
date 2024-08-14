@@ -98,6 +98,14 @@
         height: auto;
         }
 
+        /* Estilos para la galería de fotos */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+
         .gallery img:hover {
             transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
         }
