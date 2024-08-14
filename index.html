@@ -74,22 +74,28 @@
 
         /* Estilos para el contenedor de la galería */
         .gallery-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+            display: flex;
+            flex-wrap: wrap; /* Permite que los elementos se envuelvan si no hay suficiente espacio */
+            justify-content: space-between;
             gap: 20px;
             padding: 20px;
         }
 
         /* Estilos para cada elemento de la galería */
         .gallery-item {
-            display: flex;
-            flex-direction: column;
+            flex: 1 1 calc(20% - 20px); /* Cada ítem ocupará el 20% del ancho del contenedor, menos un pequeño margen */
+            margin: 10px;
+            text-align: center;
             align-items: center;
             justify-content: center;
-            text-align: center;
             padding: 10px;
             background-color: #f4f4f4;
             border-radius: 10px;
+        }
+
+        .gallery-item img {
+        max-width: 100%;
+        height: auto;
         }
 
         /* Estilos para la galería de fotos */
