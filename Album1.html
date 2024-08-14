@@ -37,6 +37,8 @@
 
         /* Estilos para cada columna */
         .gallery-item {
+            position: relative; /* Para permitir que el texto se posicione absolutamente dentro de este contenedor */
+            overflow: hidden; /* Para ocultar cualquier desbordamiento */
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -51,14 +53,21 @@
         .gallery-item img {
             max-width: 100%;
             height: auto;
-            border-radius: 8px;
+            border-radius: 10px;
             margin-bottom: 10px;
+            display: block; /* Asegura que la imagen sea un bloque para manejar bien el posicionamiento */
         }
 
         /* Estilos para los textos */
         .gallery-item p {
+            position: absolute;
+            bottom: 10px; /* Coloca el texto a 10px del borde inferior */
+            left: 10px;   /* Coloca el texto a 10px del borde izquierdo */
             margin: 0;
+            padding: 5px 10px;
+            background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
             font-size: 30px;
+            border-radius: 5px; /* Bordes redondeados para el fondo del texto */
             color: #333;
         }
 
