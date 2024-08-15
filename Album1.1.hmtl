@@ -3,81 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Negocio Local</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>ANGELES</title>
+  
     <style>
         /* Estilos generales */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
-        /* Estilos para el encabezado */
+        /* Estilos para el encabezado del álbum */
         header {
             display: flex;
+            justify-content: center;
             align-items: center;
             padding: 20px;
-            background-color: #333;
+            background-color: #1759FF;
             color: #fff;
+            text-align: center;
         }
 
-        /* Estilos para el logo */
-        .logo img {
-            width: 60px;
+        /* Estilos para el contenedor de la galería */
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Estilos para cada columna */
+        .gallery-item {
+            position: relative; /* Para permitir que el texto se posicione absolutamente dentro de este contenedor */
+            overflow: hidden; /* Para ocultar cualquier desbordamiento */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+        }
+
+        /* Estilos para las imágenes */
+        .gallery-item img {
+            width: 100%;
             height: auto;
-            margin-right: 20px;
-            border-radius: 50%; /* Si quieres redondear el logo */
+            border-radius: 10px;
+            margin-bottom: 10px;
+            display: block; /* Asegura que la imagen sea un bloque para manejar bien el posicionamiento */
         }
 
-        /* Estilos para la descripción */
-        .header-description {
-            font-size: 20px;
-            line-height: 1.5;
+        /* Estilos para los textos */
+        .gallery-item p {
+            position: absolute;
+            margin: 0;
+            padding: 5px 10px;
+            background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+            font-size: 30px;
+            color: white;
+            border-radius: 5px; /* Bordes redondeados para el fondo del texto */
         }
 
-        /* Estilos para la galería de fotos */
-        .gallery {
+        /* Estilos para la galería del álbum */
+        .photo-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 15px;
             padding: 20px;
-            background-color: #f4f4f4;
+            flex-grow: 0; /* Permite que la galería ocupe el espacio disponible */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias filas si es necesario */
         }
 
-        .gallery img {
-            width: 100%;
+        .photo-grid img {
+            width: 30%;
             height: auto;
             border-radius: 10px;
             transition: transform 0.3s ease;
         }
 
-        .gallery img:hover {
+        .photo-grid img:hover {
             transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
+        }
+
+        /* Enlace de retorno */
+        .back-link {
+            display: block;
+            text-align: center;
+            margin: 20px;
+            font-size: 18px;
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <div class="logo">
-            <img src="C:\Users\juanc\Downloads\LOGO.jpg" alt="Logo de Mi Negocio">
-        </div>
-        <div class="header-description">
-            <h1>Mi Negocio Local</h1>
-            <p>Ofrecemos los mejores productos y servicios para satisfacer tus necesidades.</p>
-        </div>
+        <h1>Angeles</h1>
     </header>
+    
+<section id="gallery" class="gallery">
 
-    <!-- Sección de la galería de fotos -->
-    <section class="gallery">
-        <img src="C:\Users\juanc\Downloads\producto1.jpg" alt="Producto 1">
-        <img src="C:\Users\juanc\Downloads\producto2.jpg" alt="Producto 2">
-        <img src="C:\Users\juanc\Downloads\producto3.jpg" alt="Producto 3">
-        <img src="C:\Users\juanc\Downloads\producto4.jpg" alt="Producto 4">
-        <img src="C:\Users\juanc\Downloads\producto5.jpg" alt="Producto 5">
-        <img src="C:\Users\juanc\Downloads\producto6.jpg" alt="Producto 6">
+            <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/angel.jpeg?raw=true" alt="Angeles">
+            <p>precio1</p>
+            <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/ultimacenamanos1.jpeg?raw=true" alt="ultimacenamanos">
+            <p>precio2</p>
+            <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/WhatsApp%20Image%202024-08-14%20at%202.54.19%20PM.jpeg?raw=true" alt="guadalupe">
+            <p>precio3</p>
+            <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/alasacostadas.jpeg?raw=true" alt="alasacostadas">
+            <p>precio4</p>
+            <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/WhatsApp%20Image%202024-08-14%20at%202.54.19%20PM%20(1).jpeg?raw=true" alt="mariayjose">
+            <p>precio5</p>
+
     </section>
+
+    <!-- Enlace de retorno a la página principal -->
+    <a class="back-link" href="index.html">Volver a la página principal</a>
 
 </body>
 </html>
