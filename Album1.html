@@ -37,8 +37,6 @@
 
         /* Estilos para cada columna */
         .gallery-item {
-            position: relative; /* Para permitir que el texto se posicione absolutamente dentro de este contenedor */
-            overflow: hidden; /* Para ocultar cualquier desbordamiento */
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -53,14 +51,12 @@
         .gallery-item img {
             width: 100%;
             height: auto;
-            border-radius: 10px;
+            border-radius: 8px;
             margin-bottom: 10px;
-            display: block; /* Asegura que la imagen sea un bloque para manejar bien el posicionamiento */
         }
 
         /* Estilos para los textos */
         .gallery-item p {
-            position: absolute;
             margin: 0;
             padding: 5px 10px;
             background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
@@ -68,31 +64,7 @@
             color: white;
             border-radius: 5px; /* Bordes redondeados para el fondo del texto */
         }
-
-        /* Estilos para la galería del álbum */
-        .photo-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            padding: 20px;
-            flex-grow: 0; /* Permite que la galería ocupe el espacio disponible */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias filas si es necesario */
-        }
-
-        .photo-grid img {
-            width: 30%;
-            height: auto;
-            border-radius: 10px;
-            transition: transform 0.3s ease;
-        }
-
-        .photo-grid img:hover {
-            transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
-        }
-
+        
         /* Enlace de retorno */
         .back-link {
             display: block;
@@ -116,6 +88,7 @@
     
 <section id="gallery" class="gallery">
     
+        <div class="gallery-container">
         <div class="gallery-item">
             <h2><a href="Album11.html">Angeles</a></h2>
             <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/angel.jpeg?raw=true" alt="Angeles">
@@ -137,9 +110,9 @@
             <p>Otros</p>
         </div>
         <!-- Añadir más columnas según sea necesario -->
-
-    </section>
+            
     </div>
+    </section>
 
     <!-- Enlace de retorno a la página principal -->
     <a class="back-link" href="index.html">Volver a la página principal</a>
