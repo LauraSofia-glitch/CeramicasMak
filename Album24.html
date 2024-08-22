@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album24: Ositos</title>
+  
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Estilos para el encabezado del álbum */
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #1759FF;
+            color: #fff;
+            text-align: center;
+        }
+
+        /* Estilos para el contenedor de la galería */
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); /* 5 columnas */
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Estilos para cada columna */
+        .gallery-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+        }
+
+        /* Estilos para las imágenes */
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Estilos para los textos */
+        .gallery-item p {
+            margin: 0;
+            padding: 5px 10px;
+            background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+            font-size: 30px;
+            color: white;
+            border-radius: 5px; /* Bordes redondeados para el fondo del texto */
+        }
+        
+        /* Enlace de retorno */
+        .back-link {
+            display: block;
+            text-align: center;
+            margin: 20px;
+            font-size: 18px;
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Album24: Ositos</h1>
+    </header>
+    
+  <section id="gallery" class="gallery">
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/astro1.jpeg?raw=true" alt="Astro1">
+            <p>$12.000</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/astro2.jpeg?raw=true" alt="Astro2">
+            <p>$8.000 c/u</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/astro3.jpeg?raw=true" alt="Astro3">
+            <p>$8.000 c/u</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/astro4.jpeg?raw=true" alt="Astro4">
+            <p>$8.000 c/u</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/astro5.jpeg?raw=true" alt="Astro5">
+            <p>$8.000</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/astro6.jpeg?raw=true" alt="Astro6">
+            <p>$4.000</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/astro7.jpeg?raw=true" alt="Astro7">
+            <p>$8.000</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/astro8.jpeg?raw=true" alt="Astro8">
+            <p>$8.000 c/u</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/astro9.jpeg?raw=true" alt="Astro9">
+            <p>$4.000 c/u</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/astro10.jpeg?raw=true" alt="Astro10">
+            <p>$8.000</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/astro11.jpeg?raw=true" alt="Astro11">
+            <p>$4.000 c/u</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/astro12.jpeg?raw=true" alt="Astro12">
+            <p>$10.000 c/u</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/astro14.jpeg?raw=true" alt="Astro13">
+            <p>$15.000 c/u</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/astro15.jpeg?raw=true" alt="Astro14">
+            <p>$8.000 c/up>
+        </div>
+        <div class="gallery-item">
+            <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/astro16.jpeg?raw=true" alt="Astro16">
+            <p>$8.000 c/u</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/astro17.jpeg?raw=true" alt="Astro17">
+            <p>$8.000 c/u</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/astro18.jpeg?raw=true" alt="Astro18">
+            <p>$8.000 c/u</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/astro19.jpeg?raw=true" alt="Astro19">
+            <p>$8.000 c/u</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/astro20.jpeg?raw=true" alt="Astro20">
+            <p>$10.000 c/u</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/astro21.jpeg?raw=true" alt="Astro21">
+            <p>$10.000 (27 cm)</p>
+            <p>$8.000 (19 cm)</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/astro22.jpeg?raw=true" alt="Astro22">
+            <p>$6.000 c/u</p>
+        </div>
+    </div>
+    </section>
+
+    <!-- Enlace de retorno a la página principal -->
+    <a class="back-link" href="index.html">Volver a la página principal</a>
+
+</body>
+</html>
