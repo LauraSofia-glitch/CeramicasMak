@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álbum 2: Alcancias y Sorpresas</title>
+  
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Estilos para el encabezado del álbum */
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #1759FF;
+            color: #fff;
+            text-align: center;
+        }
+
+        /* Estilos para el contenedor de la galería */
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); /* 5 columnas */
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Estilos para cada columna */
+        .gallery-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+        }
+
+        /* Estilos para las imágenes */
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        /* Estilos para los textos */
+        .gallery-item p {
+            margin: 0;
+            padding: 5px 10px;
+            background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+            font-size: 30px;
+            color: white;
+            border-radius: 5px; /* Bordes redondeados para el fondo del texto */
+        }
+        
+        /* Enlace de retorno */
+        .back-link {
+            display: block;
+            text-align: center;
+            margin: 20px;
+            font-size: 18px;
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Álbum 2: Alcancias y Sorpresas</h1>
+    </header>
+    
+<section id="gallery" class="gallery">
+    <div class="gallery-container">
+        
+        <div class="gallery-item">
+            <h2><a href="Album21.html">Coleccion Mario Bros</a></h2>
+            <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/WhatsApp%20Image%202024-08-20%20at%202.54.15%20PM.jpeg?raw=true" alt="MarioyLuigi">
+        </div>
+        <div class="gallery-item">
+            <h2><a href="Album22.html">Superheroes y Villanos</a></h2>
+            <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/WhatsApp%20Image%202024-08-21%20at%2010.27.25%20AM.jpeg?raw=true" alt="DragonBall">
+        </div>
+        <div class="gallery-item">
+            <h2><a href="Album23.html">Astronautas</a></h2>
+            <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/astro1.jpeg?raw=true" alt="Astronauta">
+        </div>
+        <div class="gallery-item">
+            <h2><a href="Album24.html">Ositos</a></h2>
+            <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/oso2.jpeg?raw=true" alt="Ositos">
+        </div>
+        <div class="gallery-item">
+            <h2><a href="Album25.html">Calaveras</a></h2>
+            <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/cal1.jpeg?raw=true" alt="Calaveras">
+        </div>
+        <div class="gallery-item">
+            <h2><a href="Album26.html">Groots</a></h2>
+            <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/groot1.jpeg?raw=true" alt="Groots">
+        </div>
+        <div class="gallery-item">
+            <h2><a href="Album27.html">Kaws</a></h2>
+            <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/kaw1.jpeg?raw=true" alt="Kaws">
+        </div>
+        <div class="gallery-item">
+            <h2><a href="Album28.html">Cofres</a></h2>
+            <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/cofre4.jpeg?raw=true" alt="Cofres">
+        </div>
+        <div class="gallery-item">
+            <h2><a href="Album29.html">Cerdos</a></h2>
+            <img src="https://github.com/LauraSofia-glitch/CeramicasMak/blob/main/cerdo1.jpeg?raw=true" alt="Cerdos">
+        </div>
+        <!-- Añadir más columnas según sea necesario -->
+            
+    </div>
+    </section>
+
+    <!-- Enlace de retorno a la página principal -->
+    <a class="back-link" href="index.html">Volver a la página principal</a>
+
+</body>
+</html>
