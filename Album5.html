@@ -29,10 +29,19 @@
 
         /* Estilos para el contenedor de la galería */
         .gallery-container {
-            display: grid;
+            display: flex;
+            flex-wrap: wrap;
             grid-template-columns: repeat(5, 1fr); /* 5 columnas */
-            gap: 20px;
-            padding: 20px;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        /* Imágenes dentro de la galería */
+        .gallery img {
+            width: 200px; /* Ancho uniforme */
+            height: 200px; /* Alto uniforme */
+            object-fit: cover; /* Ajusta la imagen para que no se deforme */
+            border-radius: 8px; /* Bordes redondeados opcionales */
         }
 
         /* Estilos para cada columna */
