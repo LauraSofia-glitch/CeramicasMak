@@ -141,9 +141,8 @@
         }
         /* Contenedor principal de la sección de contacto */
         .contact-section {
-            display: flex;
-            flex-direction: column; /* Coloca los elementos uno debajo del otro */
-            align-items: center; /* Centra los elementos horizontalmente */
+            display: grid;
+            align-items: right; /* Centra verticalmente el logo y el texto */
             justify-content: center; /* Centra los elementos verticalmente si es necesario */
             text-align: left; /* Alinea el texto de los elementos */
             gap: 20px; /* Espacio entre los elementos */
@@ -158,6 +157,8 @@
 
         /* Estilos para el iframe (el mapa) */
         iframe {
+            grid-column: 3; /* Coloca el logo en la columna de la derecha */
+            float: left;
             max-width: 600px; /* Máximo ancho del mapa */
             height: 100%;
             border: 0;
@@ -167,6 +168,8 @@
         .contact-info {
             width: 80%; /* El texto ocupa el 80% del ancho */
             max-width: 600px;
+            grid-column: 2; /* Coloca el texto en la columna del centro */
+            text-align: center; /* Centra el texto dentro de su columna */
         }
 
         /* Responsividad para pantallas pequeñas */
@@ -404,6 +407,10 @@
             <div class="contact-item">
                 <p><strong>Correo:</strong>: mauricio985@hotmail.com</p>
             </div>
+            <h4>Horario de atención</h4>
+            <p>Lunes a Viernes: 8:00 AM - 4:30 PM</p>
+            <p>Sábado: 8:00 AM - 12:00 PM</p>
+            <p>Domingos y festivos: Cerrado</p>
             
         </section>
     </div>
