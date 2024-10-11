@@ -141,6 +141,7 @@
         }
         /* Contenedor principal de la sección de contacto */
         .contact-section {
+            align-items: right; /* Centra verticalmente el mapa y el texto */
             display: flex;
             flex-direction: column; /* Coloca los elementos uno debajo del otro */
             align-items: center; /* Centra los elementos horizontalmente */
@@ -152,14 +153,15 @@
 
         /* Contenedor del mapa */
         .map-container {
+            grid-column: 2; /* Coloca el mapa en la columna de la derecha */
             width: 70%; /* El mapa ocupa el 80% del ancho del contenedor */
             height: 400px; /* Puedes ajustar esta altura */
             margin: 20px 0; /* Márgenes opcionales */
-
         }
 
         /* Estilos para el iframe (el mapa) */
         iframe {
+            grid-column: 2; /* Coloca el mapa en la columna de la derecha */
             width: 80%;
             max-width: 600px; /* Máximo ancho del mapa */
             height: 100%;
@@ -168,6 +170,8 @@
 
         /* Contenedor del texto de contacto */
         .contact-info {
+            grid-column: 2; /* Coloca el texto en la columna del centro */
+            text-align: center; /* Centra el texto dentro de su columna */
             width: 80%; /* El texto ocupa el 80% del ancho */
             max-width: 600px;
         }
