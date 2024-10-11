@@ -141,37 +141,33 @@
         }
         /* Contenedor principal de la sección de contacto */
         .contact-section {
-            align-items: center; /* Centra verticalmente el mapa y el texto */
             display: flex;
-            flex-direction: column; /* Coloca los elementos uno debajo del otro */
-            align-items: center; /* Centra los elementos horizontalmente */
-            justify-content: center; /* Centra los elementos verticalmente si es necesario */
+            justify-content: center; /* Centra los elementos horizontalmente */
+            align-items: center; /* Alinea los elementos verticalmente */
             text-align: center; /* Alinea el texto de los elementos al centro */
             gap: 20px; /* Espacio entre los elementos */
             padding: 20px;
+            flex-wrap: wrap; /* Permite que los elementos se ajusten en pantalla pequeña */
         }
 
         /* Contenedor del mapa */
         .map-container {
-            grid-column: 4; /* Coloca el mapa en la columna de la derecha */
-            width: 70%; /* El mapa ocupa el 80% del ancho del contenedor */
-            height: 400px; /* Puedes ajustar esta altura */
-            margin: 20px 0; /* Márgenes opcionales */
+            flex: 1; /* Hace que el mapa ocupe el mismo espacio que el texto */
+            min-width: 300px; /* Ancho mínimo del mapa */
+            max-width: 600px; /* Ancho máximo del mapa */
         }
 
         /* Estilos para el iframe (el mapa) */
         iframe {
-            width: 80%;
-            max-width: 600px; /* Máximo ancho del mapa */
-            height: 100%;
+            width: 100%;
+            height: 300px;
             border: 0;
         }
 
         /* Contenedor del texto de contacto */
         .contact-info {
-            grid-column: 4; /* Coloca el texto en la columna del centro */
-            text-align: center; /* Centra el texto dentro de su columna */
-            width: 80%; /* El texto ocupa el 80% del ancho */
+            flex: 1; /* Hace que el texto ocupe el mismo espacio que el mapa */
+            min-width: 300px;
             max-width: 600px;
         }
 
