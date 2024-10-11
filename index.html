@@ -139,31 +139,46 @@
         .testimonial-item {
             margin-bottom: 15px;
         }
+        /* Contenedor principal de la sección de contacto */
         .contact-section {
             display: flex;
-            justify-content: space-between; /* Espacio entre los elementos */
-            align-items: flex-start; /* Alinea los elementos en la parte superior */
-            gap: 20px; /* Espacio entre el mapa y el texto */
-            margin: 20px 0;
-            flex-wrap: wrap; /* Permite que los elementos se apilen en pantallas pequeñas */
+            flex-direction: column; /* Coloca los elementos uno debajo del otro */
+            align-items: center; /* Centra los elementos horizontalmente */
+            justify-content: center; /* Centra los elementos verticalmente si es necesario */
+            text-align: center; /* Alinea el texto de los elementos al centro */
+            gap: 20px; /* Espacio entre los elementos */
+            padding: 20px;
         }
-        /* Contenedor del texto de contacto */
-        .contact-info {
-            flex: 1; /* Toma todo el espacio disponible (ancho) */
-            min-width: 300px; /* Mínimo ancho */
-        }
+
         /* Contenedor del mapa */
         .map-container {
-            flex: 1;
-            min-width: 300px;
-            max-width: 600px; /* Limita el ancho máximo */
+            width: 80%; /* El mapa ocupa el 80% del ancho del contenedor */
+            max-width: 600px; /* Máximo ancho del mapa */
+            height: 300px; /* Puedes ajustar esta altura */
         }
-        /* Ajustes del mapa (iframe) */
+
+        /* Estilos para el iframe (el mapa) */
         iframe {
             width: 100%;
-            height: 300px; /* Puedes ajustar esta altura según tu diseño */
+            height: 100%;
             border: 0;
         }
+
+        /* Contenedor del texto de contacto */
+        .contact-info {
+            width: 80%; /* El texto ocupa el 80% del ancho */
+            max-width: 600px;
+        }
+
+        /* Responsividad para pantallas pequeñas */
+        @media (max-width: 768px) {
+            .contact-section {
+                flex-direction: column; /* Mantiene los elementos en columna en pantallas pequeñas */
+            }
+
+            .map-container, .contact-info {
+                width: 50%; /* Asegura que el mapa y el texto ocupen todo el ancho disponible */
+            }
         footer {
             background-color: #454444;
             color: white;
