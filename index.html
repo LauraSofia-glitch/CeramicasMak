@@ -148,6 +148,22 @@
         grid-column: 2; /* Coloca el texto en la columna del centro */
         text-align: center; /* Centra el texto dentro de su columna */
         }
+        /* Contenedor que usará flexbox para centrar el contenido */
+        .map-container {
+            display: flex;
+            justify-content: center; /* Centra el mapa horizontalmente */
+            align-items: center; /* Centra verticalmente si hay suficiente espacio */
+            width: 100%; /* Asegura que ocupe todo el ancho disponible */
+            height: 400px; /* Puedes ajustar la altura según necesites */
+            margin: 20px 0; /* Márgenes opcionales */
+        }
+        /* Ajuste del mapa (iframe) */
+        iframe {
+            width: 80%; /* Ajusta el ancho del mapa */
+            max-width: 600px; /* Máximo ancho para evitar que sea demasiado grande en pantallas grandes */
+            height: 100%; /* Ocupa toda la altura del contenedor */
+            border: 0; /* Elimina bordes */
+        }
         footer {
             background-color: #454444;
             color: white;
