@@ -139,30 +139,30 @@
         .testimonial-item {
             margin-bottom: 15px;
         }
-        .contact-item {
+        .contact-section {
             display: flex;
-            justify-content: center;
-            gap: 20px;
+            justify-content: space-between; /* Espacio entre los elementos */
+            align-items: flex-start; /* Alinea los elementos en la parte superior */
+            gap: 20px; /* Espacio entre el mapa y el texto */
+            margin: 20px 0;
+            flex-wrap: wrap; /* Permite que los elementos se apilen en pantallas pequeñas */
         }
-        .contact-content {
-        grid-column: 2; /* Coloca el texto en la columna del centro */
-        text-align: center; /* Centra el texto dentro de su columna */
+        /* Contenedor del texto de contacto */
+        .contact-info {
+            flex: 1; /* Toma todo el espacio disponible (ancho) */
+            min-width: 300px; /* Mínimo ancho */
         }
-        /* Contenedor que usará flexbox para centrar el contenido */
+        /* Contenedor del mapa */
         .map-container {
-            display: flex;
-            grid-column: 2;
-            align-items: center; /* Centra verticalmente si hay suficiente espacio */
-            width: 100%; /* Asegura que ocupe todo el ancho disponible */
-            height: 400px; /* Puedes ajustar la altura según necesites */
-            margin: 20px 0; /* Márgenes opcionales */
+            flex: 1;
+            min-width: 300px;
+            max-width: 600px; /* Limita el ancho máximo */
         }
-        /* Ajuste del mapa (iframe) */
+        /* Ajustes del mapa (iframe) */
         iframe {
-            width: 80%; /* Ajusta el ancho del mapa */
-            max-width: 600px; /* Máximo ancho para evitar que sea demasiado grande en pantallas grandes */
-            height: 100%; /* Ocupa toda la altura del contenedor */
-            border: 0; /* Elimina bordes */
+            width: 100%;
+            height: 300px; /* Puedes ajustar esta altura según tu diseño */
+            border: 0;
         }
         footer {
             background-color: #454444;
