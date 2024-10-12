@@ -141,35 +141,33 @@
         }
         /* Contenedor principal de la sección de contacto */
         .contact-section {
-            display: grid;
-            align-items: right; /* Centra verticalmente el logo y el texto */
-            justify-content: center; /* Centra los elementos verticalmente si es necesario */
-            text-align: left; /* Alinea el texto de los elementos */
-            gap: 20px; /* Espacio entre los elementos */
+            display: flex;
+            justify-content: space-around; /* Distribuye los elementos horizontalmente */
+            align-items: center; /* Alinea los elementos verticalmente */
+            text-align: left; /* Alinea el texto de los elementos a la izquierda */
             padding: 20px;
+            gap: 20px; /* Espacio entre los elementos */
         }
 
         /* Contenedor del mapa */
         .map-container {
-            width: 100%; /* El mapa ocupa el 80% del ancho del contenedor */
-            height: 400px; /* Puedes ajustar esta altura */
+            flex: 1; /* El mapa ocupará una parte proporcional del espacio disponible */
+            min-width: 300px; /* Establece un ancho mínimo para el mapa */
+            max-width: 600px; /* Limita el ancho máximo del mapa */
         }
 
         /* Estilos para el iframe (el mapa) */
         iframe {
-            grid-column: 3; /* Coloca el logo en la columna de la derecha */
-            float: left;
-            max-width: 600px; /* Máximo ancho del mapa */
-            height: 100%;
+            width: 100%;
+            height: 300px;
             border: 0;
         }
 
         /* Contenedor del texto de contacto */
         .contact-info {
-            width: 80%; /* El texto ocupa el 80% del ancho */
+            flex: 1; /* El texto ocupará una parte proporcional del espacio disponible */
+            min-width: 300px;
             max-width: 600px;
-            grid-column: 2; /* Coloca el texto en la columna del centro */
-            text-align: center; /* Centra el texto dentro de su columna */
         }
 
         /* Responsividad para pantallas pequeñas */
@@ -179,7 +177,7 @@
             }
 
             .map-container, .contact-info {
-                width: 60%; /* Asegura que el mapa y el texto ocupen todo el ancho disponible */
+                width: 100%; /* Asegura que el mapa y el texto ocupen todo el ancho disponible */
             }
             
             footer {
