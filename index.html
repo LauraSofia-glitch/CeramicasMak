@@ -183,13 +183,15 @@
             }
             
             footer {
-            background-color: #454444;
-            color: white;
-            align-items:center;
-            text-align: center;
-            padding: 10px 0;
-            font-size: 0.9em;
-            margin-top: 20px;
+            display: flex;
+            justify-content: center; /* Centra los elementos horizontalmente */
+            align-items: center; /* Centra los elementos verticalmente */
+            flex-direction: column; /* Organiza los elementos en columna */
+            text-align: center; /* Alinea el texto al centro */
+            background-color: #333; /* Fondo del pie de página */
+            color: white; /* Color de texto */
+            padding: 20px;
+            height: 100px; /* Altura fija para el pie de página */
         }
         /* Estilos para el contenedor de redes sociales */
         .social-media {
