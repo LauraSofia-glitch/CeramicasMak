@@ -142,17 +142,19 @@
         /* Contenedor principal de la sección de contacto */
         .contact-section {
             display: flex;
-            justify-content: space-around; /* Distribuye los elementos horizontalmente */
-            align-items: center; /* Alinea los elementos verticalmente */
-            text-align: center; /* Alinea el texto de los elementos */
+            justify-content: center; /* Centra los elementos horizontalmente */
+            align-items: center; /* Centra los elementos verticalmente */
+            text-align: center; /* Alinea el texto de los elementos al centro */
+            height: 100vh; /* Hace que el contenedor ocupe toda la altura de la ventana */
             padding: 20px;
-            gap: 20px; /* Espacio entre los elementos */
+            flex-wrap: wrap; /* Permite que los elementos se ajusten en pantalla pequeña */
         }
 
         /* Contenedor del mapa */
         .map-container {
             flex: 1; /* El mapa ocupará una parte proporcional del espacio disponible */
             width: 100%;
+            margin: 10px; /* Añade espacio alrededor del mapa */
         }
 
         /* Estilos para el iframe (el mapa) */
@@ -167,6 +169,7 @@
             flex: 1; /* El texto ocupará una parte proporcional del espacio disponible */
             min-width: 300px;
             max-width: 600px;
+            margin: 10px; /* Añade espacio alrededor del texto */
         }
 
         /* Responsividad para pantallas pequeñas */
