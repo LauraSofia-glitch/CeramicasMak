@@ -193,16 +193,15 @@
             width: 100%; /* Ocupa todo el ancho de la página */
             padding: 20px;
         }
-
-        .imagen-separada {
-    margin: 20px; /* Añade un margen de 20px alrededor de toda la imagen */
-}
+            
         /* Estilos para la imagen separada del borde */
         .imagen-separada {
             width: 100%; /* La imagen ocupará el ancho disponible */
             max-width: 600px; /* Máximo ancho de 600px para no estirarse demasiado */
+            height: auto; /* Mantiene la proporción de la imagen */
             margin: 20px auto; /* Añade espacio alrededor de la imagen y la centra */
-            display: block; /* Asegura que la imagen se trate como un bloque (evita comportamientos inline) */
+            grid-column: 3; /* Coloca el logo en la columna de la derecha */
+            float: left;
         }
             
         /* Estilos para el contenedor de redes sociales */
