@@ -28,16 +28,25 @@
         height: auto; /* Mantiene la proporción de la imagen */
         }
         header {
-            background-color: #1759FF;
-            color: white;
-            align-items: right; /* Centra verticalmente el logo y el texto */
+            background-image: url('imagen.jpg'); /* Imagen de fondo */
+            background-size: cover; /* Hace que la imagen ocupe todo el espacio */
+            background-position: center; /* Centra la imagen */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            height: 400px; /* Altura del encabezado, puedes ajustarlo según prefieras */
+            color: white; /* Color del texto en el encabezado */
+            display: flex;
+            justify-content: center; /* Centra horizontalmente el contenido del encabezado */
+            align-items: center; /* Centra verticalmente el contenido del encabezado */
+            text-align: center; /* Alinea el texto en el centro */
             font-size: 1.5em;
             padding: 10px; /* Espacio interno del encabezado */
         }
         /* Estilos para la columna del texto */
         .header-content {
+        font-size: 3rem; /* Tamaño del título */
         grid-column: 2; /* Coloca el texto en la columna del centro */
         text-align: center; /* Centra el texto dentro de su columna */
+        margin: 0;
         }
         nav {
             background-color: #FF55C2;
