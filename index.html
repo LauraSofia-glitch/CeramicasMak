@@ -19,7 +19,7 @@
             padding: 0;
             background-color: #1759FF;
             color: #ffffff;
-            line-height: 2.0;
+            line-height: 3.0;
         }
         .logo {
         grid-column: 3; /* Coloca el logo en la columna de la derecha */
@@ -133,11 +133,11 @@
         /* Contenedor principal de la sección de contacto */
         .contact-section {
             display: flex;
-            flex-direction: column; /* Coloca los elementos en fila (horizontalmente) */
+            flex-direction: row; /* Coloca los elementos en fila (horizontalmente) */
             justify-content: space-between; /* Espacio uniforme entre los elementos */
             align-items: center; /* Alinea los elementos verticalmente */
             text-align: center; /* Alinea el texto dentro de los elementos a la izquierda */
-            padding: 20px;
+            padding: 10px;
             gap: 10px; /* Espacio entre los elementos */
         }
 
@@ -145,13 +145,13 @@
         .map-container {
             flex: 1; /* El mapa ocupará una parte proporcional del espacio disponible */
             min-width: 300px; /* Ancho mínimo del mapa */
-            max-width: 300px; /* Limita el ancho máximo del mapa */
+            max-width: 600px; /* Limita el ancho máximo del mapa */
         }
 
         /* Estilos para el iframe (el mapa) */
         iframe {
             width: 600px;
-            height: 300px;
+            height: 400px;
             border: 0;
         }
 
@@ -220,7 +220,7 @@
             text-align: right; /* Alinea el texto al centro */
             background-color: #333; /* Fondo del pie de página */
             color: white; /* Color de texto */
-            height: 150px; /* Altura del pie de página */
+            height: 100px; /* Altura del pie de página */
             width: 100%; /* Ocupa todo el ancho de la página */
             padding: 20px;
         }
