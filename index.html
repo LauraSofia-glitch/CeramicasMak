@@ -78,7 +78,7 @@
         .gallery {
             display: grid;
             grid-template-columns: repeat(3, 1fr); /* 4 columnas de igual ancho */
-            grid-gap: 20px; /* Espacio entre las imágenes */
+            grid-gap: 30px; /* Espacio entre las imágenes */
         }
 
         /* Cada álbum dentro de la galería */
@@ -98,10 +98,6 @@
         .album.grande {
             grid-column: span 2; /* Este álbum ocupará 2 columnas */
             grid-row: span 2; /* Este álbum ocupará 2 filas */
-        }
-
-        .gallery img:hover {
-            transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
         }
 
         /* Estilo para el título del álbum */
