@@ -74,52 +74,45 @@
             color: #ffffff;
         }
 
-        /* Estilos para el contenedor de la galería */
-        .gallery-container {
-            display: flex;
-            flex-wrap: wrap; /* Permite que los elementos se envuelvan si no hay suficiente espacio */
-            justify-content: space-between;
-            gap: 20px;
-            padding: 20px;
-        }
-
-        /* Estilos para cada elemento de la galería */
-        .gallery-item {
-            flex: 1 1 calc(20% - 20px); /* Cada ítem ocupará el 20% del ancho del contenedor, menos un pequeño margen */
-            margin: 10px;
-            text-align: center;
-        }
-
-        .gallery-item img {
-        max-width: 50%;
-        height: auto;
-        }
-
         /* Estilos para la galería de fotos */
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            padding: 20px;
+            grid-template-columns: repeat(4, 1fr); /* 4 columnas de igual ancho */
+            grid-gap: 10px; /* Espacio entre las imágenes */
+        }
+
+        /* Cada álbum dentro de la galería */
+        .album {
+            position: relative;
+            overflow: hidden;
         }
 
         .gallery img {
             width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 10px;
-            transition: transform 0.3s ease;
+            height: 100%;
+            object-fit: cover; /* Ajusta la imagen sin distorsionar */
+            display: block;
+        }
+
+        /* Álbumes con tamaños diferentes */
+        .album.grande {
+            grid-column: span 2; /* Este álbum ocupará 2 columnas */
+            grid-row: span 2; /* Este álbum ocupará 2 filas */
         }
 
         .gallery img:hover {
             transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
         }
 
-        /* Estilos para los textos */
-        .gallery-item p {
+        /* Estilo para el título del álbum */
+        .album h3 {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+            padding: 5px;
             margin: 0;
-            font-size: 20px;
-            color: #fff;
         }
 
         .gallery h2, .services, .about h2, .testimonials h2, .contact h2 {
