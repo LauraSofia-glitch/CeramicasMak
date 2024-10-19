@@ -131,13 +131,15 @@
             width: 300px; /* Ajusta el ancho de la imagen */
             height: auto; /* Mantiene la proporción de la imagen */
             border-radius: 10px; /* Opcional: redondea los bordes de la imagen */
-            align-items: center; /* Alinea los elementos (imagen y descripción) */
+            grid-column: 3; /* Coloca el logo en la columna de la derecha */
+            float: left;
         }
         /* Descripción del producto */
         .service-item .descripcion {
             max-width: 600px; /* Limita el ancho del texto de descripción */
             align-items: center; /* Alinea los elementos (imagen y descripción) */
-            text-align: center;
+            grid-column: 2; /* Coloca el texto en la columna del centro */
+            text-align: center; /* Centra el texto dentro de su columna */
         }
         /* Estilos específicos para los testimonios */
         .testimonials blockquote {
