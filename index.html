@@ -120,10 +120,9 @@
         }
         .services-item {
             margin-bottom: 10px;
-            grid-column: 3; /* Coloca el logo en la columna de la derecha */
-            float: left;
-            width: 600px; /* Ajusta el tamaño según sea necesario */
-            height: 400px; /* Mantiene la proporción de la imagen */
+            flex: 1; /* El mapa ocupará una parte proporcional del espacio disponible */
+            min-width: 300px; /* Ancho mínimo del mapa */
+            max-width: 600px; /* Limita el ancho máximo del mapa */
         }
         /* Estilos específicos para los testimonios */
         .testimonials blockquote {
