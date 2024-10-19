@@ -122,9 +122,13 @@
         }
         .services-item {
             margin-bottom: 10px;
-            display: flex;
-            align-items: center; /* Alinea los elementos (imagen y descripción) */
-            gap: 15px; /* Espacio entre la imagen y el texto */
+            display: flex; /* Flexbox para alinear los elementos */
+            flex-direction: column; /* Coloca imagen y descripción en columna */
+            justify-content: center; /* Centrar horizontalmente */
+            align-items: center; /* Centra los elementos dentro del contenedor del producto */
+            gap: 20px; /* Espacio entre la imagen y la descripción */
+            max-width: 600px; /* Limita el ancho del contenedor */
+            text-align: center; /* Centra el texto */
         }
         /* Imagen del producto */
         .service-item img {
